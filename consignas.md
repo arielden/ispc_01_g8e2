@@ -2,7 +2,7 @@
 Lo solicitado a continuación se deberá plasmar en el repositorio del grupo, no se evaluarán archivos subidos o modificados luego de la fecha límite de entrega
 El repositorio deberá tener como colaboradores a cada integrante del grupo
 
-------
+
 ## Introducción a la Programación:
 
 En archivo README.md
@@ -11,11 +11,11 @@ En archivo README.md
 * Análisis y Diseño del proyecto (pseudocódigo)
 * Dentro del repositorio, en carpeta solucionesPracticas dejar las soluciones en pseudocódigo y archivos fuentes de Python de los ejercicios propuestos en las presentaciones.
 
-------
+
 ## Base de Datos I: 
 Diagrama Entidad Relación (Notación de Chen. Convenciones vistas en la presentación utilizada en los contenidos del aula)
 
-------
+
 ## Ética:
 Basándose en los requerimientos funcionales del proyecto y aplicando la legislación revisada en la cursada crear un enlace en la Wiki llamado Ética detallando el siguiente contenido:
 
