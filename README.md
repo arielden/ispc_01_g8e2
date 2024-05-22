@@ -1,2 +1,2 @@
-# ispc_01_g8e2
-Evidencia 2 - Módulo Programador - TSCDIA - 2024
+# ISPC - Grupo 8 - Evidencia 2
+Módulo Programador - TSCDIA - 2024
