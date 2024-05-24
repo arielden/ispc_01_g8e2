@@ -1,22 +1,24 @@
-# Evidencia de Aprendizaje 2
-Lo solicitado a continuación se deberá plasmar en el repositorio del grupo, no se evaluarán archivos subidos o modificados luego de la fecha límite de entrega
-El repositorio deberá tener como colaboradores a cada integrante del grupo
+La evidencia estará disponible para ser entregada desde el 22/05/2024 al 26/05/2024
 
+
+Lo solicitado a continuación se deberá plasmar en el repositorio del grupo, no se evaluarán archivos subidos o modificados luego de la fecha límite de entrega
+
+El repositorio deberá tener como colaboradores a cada integrante del grupo
 
 ## Introducción a la Programación:
 
 En archivo README.md
-* Detallar los datos de los integrantes del grupo: Nombre, Apellido, DNI, Correo Electrónico y link (url) de la cuenta personal de github.
-* Descripción de la propuesta de proyecto elegida.
-* Análisis y Diseño del proyecto (pseudocódigo)
-* Dentro del repositorio, en carpeta solucionesPracticas dejar las soluciones en pseudocódigo y archivos fuentes de Python de los ejercicios propuestos en las presentaciones.
-
+Detallar los datos de los integrantes del grupo: Nombre, Apellido, DNI, Correo Electrónico y link (url) de la cuenta personal de github.
+Descripción de la propuesta de proyecto elegida.
+Análisis y Diseño del proyecto (pseudocódigo). Solo de lo que será el menú principal, la primer interacción que tendra el usuario que haga uso de la aplicación.
+Dentro de un repositorio personal (no del grupal), en una carpeta solucionesPracticas dejar las soluciones en pseudocódigo y python de los ejercicios propuestos en las presentaciones y/o de las propuestas en el aula, en la sección de los contenidos (cada estructura de control, secuencial, condicional e iterativa tiene su apartado de actividades, sumado a la sección de estructuras de datos listas, tuplas y diccionarios). Aquí es importante al menos disponer de algunas soluciones realizadas en pseint y python, no necesariamente deben tener todos los ejercicios.
 
 ## Base de Datos I: 
-Diagrama Entidad Relación (Notación de Chen. Convenciones vistas en la presentación utilizada en los contenidos del aula)
 
+Diagrama Entidad Relación (Notación de Chen. Convenciones vistas en la presentación utilizada en los contenidos del aula). Esto es del proyecto (Grupal, de Base de Datos I no hay actividad individual)
 
 ## Ética:
+
 Basándose en los requerimientos funcionales del proyecto y aplicando la legislación revisada en la cursada crear un enlace en la Wiki llamado Ética detallando el siguiente contenido:
 
 1. Describir cómo el grupo se conforma como instrumento legal (Empresa, Socios, CEO, Empleados) y si tendrán un contrato con que cláusulas.
