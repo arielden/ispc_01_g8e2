@@ -6,7 +6,7 @@ Módulo Programador - TSCDIA - 2024
 
 ## <u>Integrantes:</u>
 
- * <u>**Denaro Ariel**</u>: DNI: 29583416,  email: arieldenaro@gmail.com, Usuario de Github: https://github.com/arielden. Soluciones Prácticas: https://github.com/arielden/ispc_practicas_01.git
+ * <u>**Denaro Ariel**</u>: DNI: 29583416,  email: arieldenaro@gmail.com, Usuario de Github: https://github.com/arielden. [Soluciones Prácticas - Introducción a la Prog](https://github.com/arielden/ispc_practicas_01)
 
 * <u>**Gauna Javier**</u>: DNI: 31041850,  email: gjavier1905@gmail.com, Usuario de Github: https://github.com/gjavier07.
 
