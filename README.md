@@ -23,30 +23,30 @@ Este sistema de venta de juegos para PC está diseñado para facilitar la adquis
 
 ### Funcionalidades Principales
 
-* Para Usuarios:
+#### Para Usuarios:
 
---* Registro e inicio de sesión seguros.
---* Exploración del catálogo de juegos, organizado por categorías.
---* Visualización detallada de cada juego (nombre, compañía, peso, categoría).
---* Adición de juegos al carrito de compra.
---* Realización de compras con aplicación automática de descuentos según la membresía.
---* Consulta del historial de compras.
+* Registro e inicio de sesión seguros.
+* Exploración del catálogo de juegos, organizado por categorías.
+* Visualización detallada de cada juego (nombre, compañía, peso, categoría).
+* Adición de juegos al carrito de compra.
+* Realización de compras con aplicación automática de descuentos según la membresía.
+* Consulta del historial de compras.
 
-* Para Administradores:
+#### Para Administradores:
 
---* Gestión completa de usuarios (altas, bajas, modificaciones).
---* Gestión del catálogo de juegos (altas, bajas, modificaciones).
---* Arquitectura del Sistema
+* Gestión completa de usuarios (altas, bajas, modificaciones).
+* Gestión del catálogo de juegos (altas, bajas, modificaciones).
+* Arquitectura del Sistema
 
 El sistema está desarrollado en Python y utiliza una base de datos para almacenar la información de usuarios, juegos, carritos y compras. La estructura de la base de datos se basa en el siguiente diagrama entidad-relación (ER):
 
 [Imagen del diagrama ER simplificado con 4 tablas]
 
-* Módulos Principales
+#### Módulos
 
---* usuario.py: Contiene el código para gestionar los usuarios.
---* juego.py: Contiene el código para gestionar los juegos.
---* carrito.py: Contiene el código para gestionar el carrito de compras.
---* compra.py: Contiene el lógica para concretar la compra.
---* main.py: Menú principal de la aplicación, muestra un menú interactivo para acceder a las diferentes funcionalidades. (Creación, Lectura, Modificación y Borrado de registros en las distintas tablas.)
+* usuario.py: Contiene el código para gestionar los usuarios.
+* juego.py: Contiene el código para gestionar los juegos.
+* carrito.py: Contiene el código para gestionar el carrito de compras.
+* compra.py: Contiene el lógica para concretar la compra.
+* main.py: Menú principal de la aplicación, muestra un menú interactivo para acceder a las diferentes funcionalidades. (Creación, Lectura, Modificación y Borrado de registros en las distintas tablas.)
 
