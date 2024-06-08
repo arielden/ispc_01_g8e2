@@ -13,22 +13,40 @@ Módulo Programador - TSCDIA - 2024
 | Pablo BAJAR   | 33599313      | pabloalejabajar@gmail.com |https://github.com/PabloBajar |
 
 <!-- Descripción de la propuesta de proyecto elegida: -->
+## Sistema de Venta de Juegos para PC
+### Descripción
 
-## <u>Nuestra propuesta:</u>
+Este sistema de venta de juegos para PC está diseñado para facilitar la adquisición de juegos digitales por parte de los usuarios, así como la gestión integral de usuarios, juegos, carritos de compra y compras por parte de los administradores. El sistema ofrece dos modalidades de cuenta para los usuarios:
 
-Como propuesta hemos elegido desarrollar una aplicación de venta de juegos para Pc. 
+* Estándar: Sin costo, los usuarios adquieren los juegos a su precio completo.
+* Plus: Los usuarios obtienen descuentos en los juegos de 40% en el precio final del juego.
 
-Cuando ingresa el usuario debe registrarse con su mail y elegir una contraseña. 
+### Funcionalidades Principales
 
-Luego deben elegir a que tipo de cuenta se va a adherir. 
+* Para Usuarios:
 
-Los tipos de cuentas son:
+--* Registro e inicio de sesión seguros.
+--* Exploración del catálogo de juegos, organizado por categorías.
+--* Visualización detallada de cada juego (nombre, compañía, peso, categoría).
+--* Adición de juegos al carrito de compra.
+--* Realización de compras con aplicación automática de descuentos según la membresía.
+--* Consulta del historial de compras.
 
-* **Standard**: sin Costo. El usuario debe abonar el 100% del valor de los juegos.
+* Para Administradores:
 
-* **Plus**: El usuario abonará una membrecia mensual, la cual le permite acceder a los juegos abonando solo el 40% del valor. Además le brindará acceso anticipado a los nuevos lanzamientos. 
+--* Gestión completa de usuarios (altas, bajas, modificaciones).
+--* Gestión del catálogo de juegos (altas, bajas, modificaciones).
+--* Arquitectura del Sistema
 
-Una vez registrado el usuario accede a un manú donde puede seleccionar el juego o los juegos que quiere comprar. Los juegos estarán cargados con el nombre, companía que desarrolla, peso en memoria y categoría a la que pertenece, ya que también se encontrarán  dividios por categoría. 
+El sistema está desarrollado en Python y utiliza una base de datos para almacenar la información de usuarios, juegos, carritos y compras. La estructura de la base de datos se basa en el siguiente diagrama entidad-relación (ER):
 
-Cada vez que elige un juego, lo agrega a un carrito y cuando termina de agregar los juegos, ya puede realizar la compra desde el carrito.
+[Imagen del diagrama ER simplificado con 4 tablas]
+
+* Módulos Principales
+
+--* usuario.py: Contiene el código para gestionar los usuarios.
+--* juego.py: Contiene el código para gestionar los juegos.
+--* carrito.py: Contiene el código para gestionar el carrito de compras.
+--* compra.py: Contiene el lógica para concretar la compra.
+--* main.py: Menú principal de la aplicación, muestra un menú interactivo para acceder a las diferentes funcionalidades. (Creación, Lectura, Modificación y Borrado de registros en las distintas tablas.)
 
