@@ -38,10 +38,6 @@ Este sistema de venta de juegos para PC está diseñado para facilitar la adquis
 * Gestión del catálogo de juegos (altas, bajas, modificaciones).
 * Arquitectura del Sistema
 
-El sistema está desarrollado en Python y utiliza una base de datos para almacenar la información de usuarios, juegos, carritos y compras. La estructura de la base de datos se basa en el siguiente diagrama entidad-relación (ER):
-
-[Imagen del diagrama ER simplificado con 4 tablas]
-
 #### Módulos
 
 * usuario.py: Contiene el código para gestionar los usuarios.
