@@ -1,15 +1,20 @@
-from usuario import registrar_usuario, modificar_usuario, eliminar_usuario, mostrar_usuario
-from juego import agregar_juego, modificar_juego, eliminar_juego, mostrar_juego
-from carrito import agregar_al_carrito, eliminar_del_carrito, mostrar_carrito
-from compra import realizar_compra, mostrar_compras
+from bd.conexion_basedatos import conectar_base
+from aplicacion.usuario import registrar_usuario, modificar_usuario, eliminar_usuario, mostrar_usuario
+from aplicacion.juego import agregar_juego, modificar_juego, eliminar_juego, mostrar_juego
+from aplicacion.carrito import agregar_al_carrito, eliminar_del_carrito, mostrar_carrito
+from aplicacion.compra import realizar_compra, mostrar_compras
+from aplicacion.categoria import agregar_categoria, modificar_categoria, eliminar_categoria, mostrar_categoria
+
+conexion = conectar_base()
 
 while True:
     print("\n----Bienvenido/a! ------")
     print("----Elije una opción----\n")
     print("1. Usuarios")
     print("2. Juegos")
-    print("3. Gestión de Carrito y Compras")
-    print("4. Salir")
+    print("3. Categorías") 
+    print("4. Gestión de Carrito y Compras")
+    print("5. Salir")
     print("-----------------------")
     print("-----Fin del Menu------\n")
 
@@ -28,13 +33,13 @@ while True:
             opcion_usuarios = int(input("Seleccione una opción: "))
 
             if opcion_usuarios == 1:
-                registrar_usuario()
+                registrar_usuario(conexion)
             elif opcion_usuarios == 2:
-                modificar_usuario()
+                modificar_usuario(conexion)
             elif opcion_usuarios == 3:
-                eliminar_usuario()
+                eliminar_usuario(conexion)
             elif opcion_usuarios == 4:
-                mostrar_usuario()
+                mostrar_usuario(conexion)
             elif opcion_usuarios == 5:
                 break
             else:
@@ -53,19 +58,45 @@ while True:
             opcion_juegos = int(input("Seleccione una opción: "))
 
             if opcion_juegos == 1:
-                agregar_juego()
+                agregar_juego(conexion)
             elif opcion_juegos == 2:
-                modificar_juego()
+                modificar_juego(conexion)
             elif opcion_juegos == 3:
-                eliminar_juego()
+                eliminar_juego(conexion)
             elif opcion_juegos == 4:
-                mostrar_juego()
+                mostrar_juego(conexion)
             elif opcion_juegos == 5:
                 break
             else:
                 print("Opción inválida. Intente de nuevo.")
+    
+    elif opcion_menu == 3:  # Nueva sección para CRUD de categorías
+        while True:
+            print("\n--- Categorías ---\n")
+            print("1. Agregar categoría")
+            print("2. Modificar categoría")
+            print("3. Eliminar categoría")
+            print("4. Mostrar categorías")
+            print("5. Salir")
+            print("-----------------------\n")
 
-    elif opcion_menu == 3:
+            opcion_categorias = int(input("Seleccione una opción: "))
+
+            if opcion_categorias == 1:
+                agregar_categoria(conexion)
+            elif opcion_categorias == 2:
+                modificar_categoria(conexion)
+            elif opcion_categorias == 3:
+                eliminar_categoria(conexion)
+            elif opcion_categorias == 4:
+                mostrar_categoria(conexion)
+            elif opcion_categorias == 5:
+                break
+            else:
+                print("Opción inválida. Intente de nuevo.")
+
+
+    elif opcion_menu == 4:  # Gestión de Carrito y Compras (ahora es la opción 4)
         while True:
             print("\n----Gestión de Carrito y Compras----\n")
             print("1. Agregar juego al carrito")
@@ -79,22 +110,24 @@ while True:
             opcion_carrito = int(input("Seleccione una opción: "))
 
             if opcion_carrito == 1:
-                agregar_al_carrito()
+                agregar_al_carrito(conexion)
             elif opcion_carrito == 2:
-                eliminar_del_carrito()
+                eliminar_del_carrito(conexion)
             elif opcion_carrito == 3:
-                mostrar_carrito()
+                mostrar_carrito(conexion)
             elif opcion_carrito == 4:
-                realizar_compra()
+                realizar_compra(conexion)
             elif opcion_carrito == 5:
-                mostrar_compras()
+                mostrar_compras(conexion)
             elif opcion_carrito == 6:
                 break
             else:
                 print("Opción inválida. Intente de nuevo.")
 
-    elif opcion_menu == 4:
+    elif opcion_menu == 5:
         print("Hasta luego!")
+        print("Se cierra la conexión con la base de datos!")
+        conexion.close()
         break
     else:
         print("Opción inválida. Intente de nuevo.")
