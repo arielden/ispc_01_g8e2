@@ -1,11 +1,13 @@
 import mysql.connector
+from aplicacion.usuario import mostrar_usuario
 
 def realizar_compra(conexion):
     try:
         cursor = conexion.cursor()
 
+        mostrar_usuario(conexion)
         id_usuario = int(input("Ingrese el ID del usuario que realiza la compra: "))
-
+        
         # Se valida si el usuario existe
         cursor.execute("SELECT * FROM Usuario WHERE idUsuario = %s", (id_usuario,))
         usuario = cursor.fetchone()

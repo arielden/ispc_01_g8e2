@@ -1,15 +1,15 @@
 import mysql.connector
-from usuario import mostrar_usuario
-from juego import mostrar_juego
+from aplicacion.usuario import mostrar_usuario
+from aplicacion.juego import mostrar_juego
 
 def agregar_al_carrito(conexion):
     try:
         cursor = conexion.cursor()
 
+        mostrar_usuario(conexion)
         id_usuario = int(input("Ingrese el ID del usuario: "))
-        mostrar_usuario()
+        mostrar_juego(conexion)
         id_juego = int(input("Ingrese el ID del juego a agregar: "))
-        mostrar_juego()
 
         # Si no ingresa usuario o juego...
         if not id_usuario or not id_juego:
@@ -95,6 +95,7 @@ def eliminar_del_carrito(conexion):
 def mostrar_carrito(conexion):
     try:
         cursor = conexion.cursor()
+        mostrar_usuario(conexion)
         id_usuario = int(input("Ingrese el ID del usuario: "))
 
         # Se obtienen los juegos del carrito del usuario, nombre y precio

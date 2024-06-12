@@ -1,4 +1,5 @@
 import mysql.connector
+from aplicacion.categoria import mostrar_categoria
 
 def agregar_juego(conexion):
     try:
@@ -6,6 +7,7 @@ def agregar_juego(conexion):
 
         nombre = input("Ingrese el nombre del juego: ")
         precio = float(input("Ingrese el precio del juego: "))
+        mostrar_categoria(conexion)
         categoria_id = int(input("Ingrese el ID de la categoría: "))
 
         # Se valida que se hayan ingresado todos los datos pedidos
@@ -58,6 +60,7 @@ def modificar_juego(conexion):
 
         nombre = input("Nuevo nombre (dejar en blanco para no modificar): ")
         precio = input("Nuevo precio (dejar en blanco para no modificar): ")
+        mostrar_categoria(conexion)
         categoria_id = input("Nuevo ID de categoría (dejar en blanco para no modificar): ")
 
         actualizar_campos = []
