@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 8.0.36, for Win64 (x86_64)
+-- MySQL dump 10.13  Distrib 8.0.26, for Win64 (x86_64)
 --
--- Host: localhost    Database: ventadejuegos
+-- Host: 127.0.0.1    Database: ventadejuegos
 -- ------------------------------------------------------
--- Server version	8.0.37
+-- Server version	8.1.0
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -21,7 +21,7 @@
 
 LOCK TABLES `carrito` WRITE;
 /*!40000 ALTER TABLE `carrito` DISABLE KEYS */;
-INSERT INTO `carrito` VALUES (7,7),(8,8),(9,9);
+INSERT INTO `carrito` VALUES (7,7),(8,8),(9,9),(10,10),(11,11),(12,12),(14,14),(15,15),(16,16),(18,18);
 /*!40000 ALTER TABLE `carrito` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -51,7 +51,7 @@ UNLOCK TABLES;
 
 LOCK TABLES `compra` WRITE;
 /*!40000 ALTER TABLE `compra` DISABLE KEYS */;
-INSERT INTO `compra` VALUES (3,7,2,'2024-06-12 11:39:00',149.40),(4,7,2,'2024-06-12 11:40:28',90.00),(5,7,1,'2024-06-12 11:54:40',144.00),(6,7,3,'2024-06-12 11:54:40',270.00),(7,8,1,'2024-06-12 14:15:07',240.00);
+INSERT INTO `compra` VALUES (3,7,2,'2024-06-12 11:39:00',149.40),(4,7,2,'2024-06-12 11:40:28',90.00),(5,7,1,'2024-06-12 11:54:40',144.00),(6,7,3,'2024-06-12 11:54:40',270.00),(7,8,1,'2024-06-12 14:15:07',240.00),(8,10,4,'2024-06-12 21:09:09',320.00),(9,15,6,'2024-06-12 23:44:15',340.00);
 /*!40000 ALTER TABLE `compra` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -81,7 +81,7 @@ UNLOCK TABLES;
 
 LOCK TABLES `usuario` WRITE;
 /*!40000 ALTER TABLE `usuario` DISABLE KEYS */;
-INSERT INTO `usuario` VALUES (7,'ariel@gmail.com','123','Ariel','Denaro',2),(8,'javier@gmail.com','123','Javier','Gauna',1),(9,'pablo@hotmail.com','123','Pablo','Bajar',2);
+INSERT INTO `usuario` VALUES (7,'ariel@gmail.com','123','Ariel','Denaro',2),(8,'javier@gmail.com','123','Javier','Gauna',1),(9,'pablo@hotmail.com','123','Pablo','Bajar',2),(10,'leo.messi@gmail.com','1234','Leo','Messi',1),(11,'rodri.depaul@gmail.com','123','Rodrigo','De Paul',1),(12,'dibu.martinez@gmail.com','Emiliano','Martinez','1111',2),(14,'scaloni@gmail.com','123','Lionel','Scaloni',2),(15,'fernandez@gmail.com','123','Enzo','Fernandez',1),(16,'otamendi@gmail.com','123','Nicolas','Otamendi',1),(18,'dimaria@gmail.com','123','Angel','Dimaria',2);
 /*!40000 ALTER TABLE `usuario` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -94,4 +94,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-06-12 15:25:10
+-- Dump completed on 2024-06-12 23:47:26
