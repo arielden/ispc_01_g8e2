@@ -46,3 +46,40 @@ Este sistema de venta de juegos para PC está diseñado para facilitar la adquis
 * compra.py: Contiene el lógica para concretar la compra.
 * main.py: Menú principal de la aplicación, muestra un menú interactivo para acceder a las diferentes funcionalidades. (Creación, Lectura, Modificación y Borrado de registros en las distintas tablas.)
 
+Explicacion Archivos .py
+main.py
+El archivo main.py es el punto de entrada principal de la aplicación de ventas de juegos para PC. Su objetivo principal es proporcionar una interfaz de usuario basada en texto que permita a los usuarios y administradores interactuar con el sistema de gestión de ventas de juegos. Este archivo maneja el flujo de la aplicación, presentando menús y submenús que permiten realizar diversas operaciones según el rol del usuario (ya sea un usuario estándar o un administrador).
+Contenido del archivo main.py
+
+1-	Importaciones:
+Importa funciones y módulos necesarios para la gestión de la base de datos y las operaciones específicas (usuarios, juegos, carrito, compras y categorías).
+
+2-	Conexión a la base de datos:
+Establece una conexión con la base de datos.
+
+3-	Bucle principal:
+Presenta el menú principal y permite al usuario seleccionar diferentes opciones.
+Las opciones incluyen la gestión de usuarios, juegos, categorías, y el carrito de compras.
+
+4-	Gestión de usuarios:
+Permite registrar, modificar, eliminar y mostrar usuarios.
+5-	Gestión de juegos:
+Permite agregar, modificar, eliminar y mostrar juegos.
+
+6-	Gestión de categorías:
+Permite agregar, modificar, eliminar y mostrar categorías.
+
+7-	Gestión de carrito y compras:
+Permite agregar juegos al carrito, eliminar juegos del carrito, mostrar el contenido del carrito, realizar compras y mostrar el historial de compras.
+
+8-	Salir del sistema:
+Cierra la conexión con la base de datos y termina el programa.
+
+Objetivo del archivo main.py
+
+El objetivo de este archivo es proporcionar una interfaz de usuario simple y funcional que permita:
+A los administradores: gestionar usuarios, juegos, y categorías.
+A los usuarios: explorar juegos, administrar su carrito de compras y realizar compras.
+
+
+
