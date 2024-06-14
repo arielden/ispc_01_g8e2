@@ -8,21 +8,20 @@ from aplicacion.categoria import agregar_categoria, modificar_categoria, elimina
 conexion = conectar_base()
 
 while True:
-    print("\n----Bienvenido/a! ------")
-    print("----Elije una opción----\n")
+    print("\n------BIENVENIDO/A!--------")
+    print("----Seleccione una opción----\n")
     print("1. Usuarios")
     print("2. Juegos")
     print("3. Categorías") 
     print("4. Gestión de Carrito y Compras")
     print("5. Salir")
-    print("-----------------------")
-    print("-----Fin del Menu------\n")
+    print("----------------------------\n")
 
-    opcion_menu = int(input("Seleccione una opción: "))
+    opcion_menu = int(input("Seleccioná una opción: "))
 
-    if opcion_menu == 1:
+    if opcion_menu == 1: #CRUD de usuarios
         while True:
-            print("\n--- Usuarios ---\n")
+            print("\n--- USUARIOS ---\n")
             print("1. Registrar usuario")
             print("2. Modificar usuario")
             print("3. Eliminar usuario")
@@ -43,11 +42,11 @@ while True:
             elif opcion_usuarios == 5:
                 break
             else:
-                print("Opción inválida. Intente de nuevo.")
+                print("Opción inválida. Intente nuevamente")
 
-    elif opcion_menu == 2:
+    elif opcion_menu == 2: #CRUD de juegos
         while True:
-            print("\n----Juegos----\n")
+            print("\n-----JUEGOS----------\n")
             print("1. Agregar juego")
             print("2. Modificar juego")
             print("3. Eliminar juego")
@@ -68,11 +67,11 @@ while True:
             elif opcion_juegos == 5:
                 break
             else:
-                print("Opción inválida. Intente de nuevo.")
+                print("Opción inválida. Intente nuevamente")
     
-    elif opcion_menu == 3:  # Nueva sección para CRUD de categorías
+    elif opcion_menu == 3:  # CRUD de categorías
         while True:
-            print("\n--- Categorías ---\n")
+            print("\n-----CATEGORIAS-----\n")
             print("1. Agregar categoría")
             print("2. Modificar categoría")
             print("3. Eliminar categoría")
@@ -93,19 +92,19 @@ while True:
             elif opcion_categorias == 5:
                 break
             else:
-                print("Opción inválida. Intente de nuevo.")
+                print("Opción inválida. Intente nuevamente")
 
 
-    elif opcion_menu == 4:  # Gestión de Carrito y Compras (ahora es la opción 4)
+    elif opcion_menu == 4:  # Gestión de Carrito y Compras
         while True:
-            print("\n----Gestión de Carrito y Compras----\n")
+            print("\n----GESTION DE CARRITO Y COMPRAS----\n")
             print("1. Agregar juego al carrito")
             print("2. Eliminar juego del carrito")
             print("3. Mostrar carrito")
             print("4. Realizar compra")
             print("5. Mostrar compras")
             print("6. Salir")
-            print("-----------------------\n")
+            print("--------------------------------------\n")
 
             opcion_carrito = int(input("Seleccione una opción: "))
 
@@ -122,12 +121,12 @@ while True:
             elif opcion_carrito == 6:
                 break
             else:
-                print("Opción inválida. Intente de nuevo.")
+                print("Opción inválida. Intente nuevamente")
 
-    elif opcion_menu == 5:
-        print("Hasta luego!")
-        print("Se cierra la conexión con la base de datos!")
+    elif opcion_menu == 5: #SALIR!
+        print("\nGracias por utilizar nuestro sistema de ventas!")
+        print("...cerrando conexión con la base de datos\n")
         conexion.close()
         break
     else:
-        print("Opción inválida. Intente de nuevo.")
+        print("Opción inválida. Intente nuevamente")
